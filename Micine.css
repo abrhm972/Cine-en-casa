@@ -1,0 +1,377 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+body{
+    background: #1d1f20;
+    width: 100%;
+}
+header{
+    width: 100%;
+    overflow: hidden;
+    height: 600px;
+    background-image: url(cine\ en\ casa.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header h1{
+    display:block;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background: rgba(10, 10, 10,.1);
+    text-align: center;
+    font-size: 55px;
+    padding: 11px 0px;
+    color: #fff;
+}
+/****************Parte 1 de las cajas**************************/
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: row;                /*ordane de marnera horizontal*/
+    flex-wrap: wrap;                /*Manda abajo si hay mas cajas*/
+}
+.caja-1-1{
+    width: 50%;
+    display: flex;
+    align-items: center;                /*centra de manera vertical*/
+    font-size: 25px;
+    text-align: center;                 /*te centra el texto en las 2 líneas centrados*/
+    box-sizing: border-box;
+    padding: 0 2%;
+    color: #fff;
+}
+
+.caja-1-2{
+    font-size: 20px;
+    width: 50%;
+    color: #fff;
+    padding: 4% 0px;
+}
+
+.caja-1-2 p{
+    box-sizing: border-box; /*puedes modificar los tamaños de tu contenido sin afectar el contenedor*/
+    margin: 6% 8%;         /*modifica el texto sin variar el tamaño de la caja en la parte de los costados*/
+}                           /*por que no se especifico ninguna altura*/
+.hr{
+    border: 0px;
+    border-top:1px solid rgba(66, 64, 64, 0.3);
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    width: 80%;
+    margin: 0px 10% 0px 10%;
+}
+/******************Parte 2 de las cajas******************************/
+.caja-2-1{
+    width: 50%;
+    text-align: center;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0px 2%;
+    color: #fff;
+}
+.caja-2-2{
+    width: 50%;
+    font-size: 20px;
+    padding: 4% 0;
+    color: #fff;
+}
+.caja-2-2 p{
+    box-sizing: border-box;
+    margin: 6% 8%;
+}
+/********************Parte 3 de las cajas*****************************/
+.caja-3-1{
+    width: 50%;
+    font-size:25px ;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 2%;
+    color: #fff;
+}
+.caja-3-2{
+    width: 50%;
+    padding: 4% 0;
+    color: #fff;
+    font-size: 20px;
+}
+.caja-3-2 p{
+    box-sizing: border-box;             /*Separa al texto sin que se mueva su contenedor */
+    margin: 5% 8%;              /*no se pone padding por que si no se multiplicaria ".caja-3-2" esta arriba */
+}
+.caja-3-2 li{
+    list-style: none;
+}
+/*****************************************Cajas de los precios ******************************/
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.precio{
+    width: 100%;
+    font-size: 35px;
+    text-align: center;
+    padding: 3% 0;
+    color: #fff;
+}
+.proyector-precios{
+    width: 40%;
+}
+/*******************************Caja del proyecteor y sus precios *****************************/
+.caja-proyector{
+    width: 100%;
+    padding: 5% 0 1% 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.caja-proyector p{
+    color: #fff;
+}
+.proyector{
+    font-size: 60px;
+    margin: 0 2%;
+    color: #5C258D;  /* fallback for old browsers */
+    color: -webkit-linear-gradient(to top, #4389A2, #5C258D);  /* Chrome 10-25, Safari 5.1-6 */
+    color: linear-gradient(to top, #4389A2, #5C258D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.tres-circulos{
+    width: 100%;
+    padding: 2% 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.circulo-12, .circulo-20, .circulo-30{
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    margin: 0 1%;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #5C258D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #4389A2, #5C258D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #4389A2, #5C258D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.circulo-12 h3, .circulo-20 h3 , .circulo-30 h3 {
+    font-size: 25px;
+    color:#000;
+}
+.circulo-12 p, .circulo-20 p, .circulo-30 p{
+    color: #000;
+}
+/***************************************Caja de la flecha***********************************/
+.caja-flecha{
+    width:20% ;
+    text-align: center;
+        
+}
+.flecha{
+    font-size:100px ;
+    color: #5C258D;
+}
+/*************************************Caja de la pantalla***********************************/
+.pantalla-precio{
+    width: 40%;
+}
+.pantalla-precio p{
+    color: #fff;
+}
+.caja-tv{
+    width: 100%;
+    padding: 5% 0 1% 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.tv{
+    font-size:60px;
+    margin: 0 2%;
+    color: #5C258D;  /* fallback for old browsers */
+    color: -webkit-linear-gradient(to top, #4389A2, #5C258D);  /* Chrome 10-25, Safari 5.1-6 */
+    color: linear-gradient(to top, #4389A2, #5C258D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ 
+}
+.caja-circulo{
+    width: 100%;
+    padding: 2% 0 4% 0;
+    display: flex;
+    justify-content: center;
+}
+.circulo-5{
+    background: #5C258D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #4389A2, #5C258D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #4389A2, #5C258D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circulo-5 h3{
+    color: #000;
+}
+/**************************************Escribenos en:******************************************/
+.separa{
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    padding: 4% 0 2% 0;
+    color: #fff;
+}
+.escribenos{
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+}
+.iconos-comunicacion{
+    width: 100%;
+    font-size: 60px;
+    padding: 3% 0 6% 0;
+    display: flex;
+    color: #fff;
+    justify-content: space-around;
+}
+.whatsapp{
+    font-size: 70px;
+}
+/********************************************Contenido final***************************************/
+.final{
+    width: 100%;
+    background:rgba(48, 46, 46,.5);
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5% 0;
+    position: fixed;
+    bottom: 0;
+}
+.final div p{
+    color: #fff;
+}
+.interrogacion, .billete, .calendario, .chat{
+    padding: 0 0 10px 0;
+    font-size: 35px;
+}
+.final div{
+    text-align: center;
+    color:#fff;
+}
+.hr1{
+    border: 5px;
+    border-top:1px solid rgba(66, 64, 64, 0.3);
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/**********************************************RESPONCI***************************************/
+@media (min-width:768px) and (max-width:1199px){
+    header{
+        background-position: center;
+    }
+}
+
+
+
+@media (max-width:767px){
+    header{
+        background-position: center;
+    }
+    .section1 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .caja-1-1{
+        margin: 15% 0 10% 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 6%;
+        align-items: center;
+    }
+    .caja-1-2{
+        width: 100%;
+        height: auto;
+    }
+    .caja-2-1{
+        margin: 15% 0 10% 0;
+        display: flex;
+        justify-content: center;
+        padding-top: 6%;
+        width: 100%;
+    }
+    .caja-2-2{
+        width: 100%;
+    }
+    .caja-3-1{
+        margin: 15% 0 10% 0;
+        display: flex;
+        justify-content: center;
+        padding-top:6% ;
+        width:100%;
+    }
+    .caja-3-2{
+        width: 100%;
+    }
+    .caja-flecha{
+        display: none;          /*Quita una caja del contenedor */
+    }
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+    /********************main********************/
+    .precio{
+        margin-top: 15px;
+    }
+    .proyector-precios{
+        margin: 8% 0 15% 0;
+    }
+    .proyector{
+        margin-bottom: 15px;
+    }
+    .pantalla-precio{
+        margin-bottom: 10%;
+    }
+    .caja-tv{
+        margin-bottom: 15px;
+    }
+    /**************section2***********************/
+    .separa{
+        padding: 5% 0 10% 0;
+    }
+    .iconos-comunicacion{
+        height: 300px;
+        flex-direction: column;
+        align-items: center;
+        margin: 5% 0 10% 0;
+        justify-content: space-around;
+    
+    }
+}
